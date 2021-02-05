@@ -1,0 +1,567 @@
+/* ----------------ESTILOS GENERALES-------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    max-width: 1024px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+/* ----------------ESTILOS BANNER-------------------- */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.textoBanner{
+    margin-top: -450px;
+    margin-left: 190px;
+    position: absolute;
+    font-size: 40px;
+    padding: 20px;
+    width: 40%;
+    color: hsl(0, 0%, 85%);
+    border: 3px solid hsl(0, 0%, 55%);
+}
+.textoBanner h2{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.menuBarras{
+    display: none;
+}
+/* ----------------ESTILOS MENU Y LOGO-------------------- */
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .8s;
+}
+.titulo{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 130px;
+    transition: .8s;
+}
+/* ----------------ESTILOS MENU------------------- */
+.navegacion{
+    margin-right: 130px;
+}
+.navegacion a{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.navegacion a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+/* ----------------ESTILOS CAMBIAR COLOR AL MENU AL HACER SCROLL------------------- */
+.cambiarColor{
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.8);
+}
+.cambiarColor .titulo{
+    color: #000;
+}
+.cambiarColor .navegacion a{
+    color: #000;
+}
+.cambiarColor .navegacion a:hover{
+    border-bottom: 1px solid #111;
+}
+
+/* ----------------ESTILOS SECCIONES------------------- */
+.secciones{
+    margin-top: 120px;
+}
+
+/*---------------------------ESTILOS APRENDER REALIDAD VIRTUAL---------------------------*/
+.realidadVirtual{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.realidadVirtual img{
+    width: 60%;
+    position: relative;
+}
+.textoRv{
+    position: absolute;
+    width: 55%;
+    height: 300px;
+    padding: 50px;
+    display: block;
+    right: 0px;
+    margin-top: -280px;
+    background-color: #fff;
+}
+.textoRv h3{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+.textoRv p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 41%);
+    line-height: 28px;
+}
+
+/* ocultar imagenes para el estilo mobil */
+.mobil{
+    display: none;
+}
+/*---------------------- ESTILOS DE LA SECCION DE IMAGENES----------------------*/
+.tituloImagenes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.tituloImagenes h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+}
+.tituloImagenes a{
+    margin-top: 8px;
+    display: block;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #111;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.contenedorImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imagen{
+    width: 24%;
+    margin-right: 5px;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+.imagen h3{
+    width: 100%;
+    height: 50px;
+    margin-top: -90px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #cccccc;
+    font-weight: 100;
+    position: absolute;
+}
+.imagen:hover .fondo{
+    background-color: rgba(224, 224, 224, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.imagen:hover h3{
+    color: #111;
+}
+/*--------------------------- ESTILOS PIE DE PAGINA ---------------------------*/
+.footer{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+.contenedorInferior{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    margin-top: 20px;
+    text-align: center;
+}
+.menuinferior h2{
+    margin-bottom: 30px;
+}
+.navegacionFooter{
+    margin-right: 130px;
+}
+.navegacionFooter a{
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.navegacionFooter a:hover{
+    border-bottom: 1px solid #fff;
+}
+.redes a{
+    font-size: 30px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 15px;
+    text-align: center;
+    color: #cccccc;
+}
+.redes a i{
+    text-align: center;
+    margin-right: 30px;
+}
+.redes p{
+    color: #cccccc;
+}
+/*-------------------- ESTILOS PARA MOSTRAR LAS IMAGINES HACIA ARRIBA-------------------- */
+.mostrarArriba{
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.subirImagenes{
+	animation: subirImagenes 0.7s;
+}
+@keyframes subirImagenes{
+	0%{
+		transform: translateY(60px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+/* ----------------------RESPONSIBE---------------------- */
+
+@media screen and (max-width: 1100px){
+/* ----------------ESTILOS NAVEGACION Y TEXTO BANNER-------------------- */
+    .titulo{
+        margin-left: 20px;
+    }
+    .navegacion{
+        margin-right: 20px;
+    }
+    .textoBanner{
+        margin-left: 60px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 900px){
+    /* ESTILOS SECCIONES */
+    .secciones{
+        margin-top: 40px;
+    }
+   .titulo{
+       margin-left: 20px;
+   }
+   /* ESTILO NAVEGACION */
+   .navegacion{
+       margin-right: 30px;   
+   }
+   /* ESTILOS APRENDER REALIDAD VIRTUAL */
+   .textoRv p{
+    font-size: 15px;
+    line-height: 22px;
+    }
+    .imagen h3{
+    font-size: 20px;
+    }
+   /* ESTILOS NAVEGACION FOODER */
+   .navegacion a, .navegacionFooter a{
+       font-size: 14px;
+       width: 50px;
+       margin-right: 5px;
+   }
+   .redes a{
+    font-size: 30px;
+    }
+   
+}
+@media screen and (max-width: 768px){
+    /* ESTILOS NAVEGACION */
+    .titulo{
+        font-size: 18px;
+        z-index: 1000;
+    }
+    .navegacion{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    top: 0px;
+    transition: all 1s;
+    background: #111;
+    }
+    .navegacion a{
+    font-size: 25px;
+    margin-top: 60px;
+    width: 200px;
+    height: 50px;
+    }
+    /* CREAR EL MENU ESTILO AMBURGUESA */
+    .menuBarras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+        width: 33px;
+        height: 50px;
+        z-index: 100;
+        margin-top: 25px;
+    }
+    /* BARRAS DEL MENU */
+    .primera, .segunda, .tercera{
+        width: 100%;
+        height: 4px;
+        margin-bottom: 5px;
+        transition: 1s;
+        background: #ccc;
+    }
+    .mostrar .segunda{
+        opacity: 0;
+    }
+    .mostrar .primera{
+        transform: rotate(45deg) translate(8px, 3px);
+    }
+    .mostrar .tercera{
+        transform: rotate(-45deg) translate(9px, -5px);
+    }
+    /* ESTILOS ANIMACION AL HACER CLICK EN EL MENU AMBURGUESA */
+    .uno{
+        clip-path: circle(0% at 100% 0%);
+    }
+    .dos{
+        clip-path: circle(150% at 100% 0%);
+    }
+    /* CAMBIAR LOS COLORES DEL MENU AMBURGUESA Y TITULO DE LA NAVEGACION CUANDO SE ACTIVA LA ANIMACION DEL MENU AMBURGUESA */
+    .cambiarColor .primera{
+        background: #000; 
+    }
+    .cambiarColor .segunda{
+        background: #000;
+    }
+    .cambiarColor .tercera{
+        background: #000;
+    }
+    
+    .cambiarColor .mostrar .cambiarBurger{
+        background: #fff;
+    }
+    .cambiarColor .cambiarTitulo{
+        color: #ffffff;
+    }
+    .cambiarColor .navegacion a{
+        color: #fff;
+    }.cambiarColor .navegacion a:hover{
+        border-bottom: 1px solid #fff;
+    }
+    
+    /* ESTILOS DEL TEXTO DEL BANNER */
+    .textoBanner{
+        width: 80%;
+        margin: -350px 80px;
+        font-size: 35px;
+    }
+    /* ESTILOS APRENDER REALIDAD VIRTUAL */
+    .textoRv h3{
+        font-size: 35px;
+    }
+    .textoRv p{
+        font-size: 13px;
+    }
+    /* ESTILOS PIE DE PAGINA */
+    .footer{
+        height: 250px;
+    }
+    .redes{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .redes a{
+        font-size: 30px;
+        width: 35px;
+        margin-left: 2px;
+    }
+    .navegacionFooter{
+        width: 90%;
+    }
+    .navegacionFooter a{
+        margin-right: 15px;
+    }
+    
+    
+}
+@media screen and (max-width: 580px){
+    /* ESTILOS TEXTO DEL BANNER */
+    .textoBanner{
+        margin: -400px 50px;
+        font-size: 30px;
+    }
+    /* ESTILOS APRENDER REALIDAD VIRTUAL */
+    .realidadVirtual img{
+        width: 100%;
+    }
+    .textoRv{
+        position: relative;
+        width: 100%;
+        
+        padding: 50px;
+        display: block;
+        right: 0px;
+        margin-top: 0;
+        background-color: #fff;
+    }
+    .textoRv h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .textoRv p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: normal;
+        color: hsl(0, 0%, 55%);
+    }
+    /* OCULTAR LAS IMAGENES DE ESCRITORIO */
+    .escritorio{
+        display: none;
+    }
+    /* MOSTRAR LAS IMAGENES PARA MOBIL */
+    .mobil{
+        display: block;
+    }
+    /* ESTILOS IMAGENES */
+    .imagen{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .imagen h3{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .tituloImagenes h2{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
+    /* ESTILOS BOTON VER MAS */
+    .verMas{
+        display: block;
+        width: 130px;
+        margin: auto;
+        border: 1px solid #000;
+        text-align: center;
+        text-decoration: none;
+        color: #111;
+        letter-spacing: 2px;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+    /* ESTILOS DE PIE DE PAGINA */
+    .footer{
+        height: 500px;
+    }
+    .contenedorInferior{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menuinferior{
+        margin: auto;
+    }
+    .menuinferior h2{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .navegacionFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        margin: auto;
+    }
+    .navegacionFooter a{
+        width: 100%;
+        height: 34px;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    /* ESTILOS REDES SOCIALES */
+    .redes{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .redes a{
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 385px){
+    /* ESTILOS LOGO Y TEXTO DEL BANNE */
+    .titulo h1{
+        font-size: 25px;
+    }
+    .textoBanner{
+        margin-left: 35px;
+    }
+    .textoBanner h2{
+        font-size: 30px;
+    }
+    /* ESTILOS APRENDER REALIDAD VIRTUAL */
+    .textoRv h3{
+        font-size: 25px;
+    }
+    .textoRv p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .imagen h3{
+        font-size: 20px;
+        padding: 10px;
+        margin-top: -50px;
+    }
+}
